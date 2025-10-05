@@ -1,0 +1,487 @@
+:root {
+    --text-color: #222222;
+    --link-color: #4a76ee;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+     
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+   
+    /* ... existing body styles ... */
+
+    background-image: url('assets/images/Gemini_Generated_Image_2bb1te2bb1te2bb1.png'); /* Adjust path as needed */
+    background-repeat: repeat; /* This will tile the image across the background */
+    background-size: auto; /* Ensures the texture maintains its original scale */
+    background-attachment: fixed; /* (Optional) Keeps the background fixed while content scrolls */
+    background-color: var(--background-color); /* Fallback in case image doesn't load */
+
+    
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* Navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80px;
+    align-items: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+nav .right a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 5px;
+    
+}
+
+nav .right a:last-child{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+
+
+
+/* Hero */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px 0;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.hero-section .text{
+    height: 300px;
+    width: 1000px;
+    
+
+}
+
+.hero-section .text p{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.hero-section .text .links{
+    margin-top: 20px;
+    
+}
+.hero-section .text .links a{
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-section .text .links :hover{
+    color: var(--text-color);
+    border-color: var(--text-color);
+    transition: 0.1s;
+}
+
+.headshot {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: right;
+}
+
+.headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right; 
+    background-color: #f0f0f0; 
+    border-radius: 50%;
+}
+
+
+#skills, #about-me{
+    scroll-margin-top: 100px;
+}
+
+
+/* Skills */
+
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.skills-section h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.skills-section .text{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    border: 1.5px solid #d3d3d3;
+    gap:10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+.skills-section .cells .cell img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.cells .cell:hover{
+    transform: translate(0,-20px);
+}
+
+.cell {
+  transition: transform 0.3s ease;
+}
+
+
+/* About-Me */
+.about-me{
+    border: 2px solid var(--text-color);
+    margin: 50px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+}
+
+.about-me h2{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.about-me .text{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 550;
+    
+}
+
+/* Contact */
+
+.contact-me{
+margin-bottom: 20px;
+}
+.contact-me h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards{
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+.cards p{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.contact-me .linkedin{
+    border: 2px solid var(--text-color);
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    flex-direction: column;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    padding: 10px;
+    padding-top: 100px;
+    gap: 10px;
+    text-align: center;
+    
+
+}
+
+.contact-me .mail{
+    border: 2px solid var(--text-color);
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    flex-direction: column;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    padding: 10px;
+    padding-top: 100px;
+    gap: 10px;
+    text-align: center;
+}
+
+.contact-me .linkedin a{
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+
+.contact-me .mail a{
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    padding: 40px ;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Responsive Styles */
+
+/* Breakpoint for Tablets and smaller screens (max-width: 900px) */
+@media (max-width: 900px) {
+    /* Global Adjustments */
+    nav,
+    .hero-section,
+    .skills-section,
+    .about-me,
+    .contact-me {
+        /* Reduce horizontal padding on main sections */
+        padding: 0 20px;
+        margin: 20px 0; /* Adjust overall section spacing */
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: flex-start;
+    }
+
+    nav .right {
+        margin-top: 15px;
+    }
+
+    nav .right a:last-child {
+        /* Ensure the last button-style link maintains margin */
+        margin-left: 5px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-section .text {
+        width: 100%; /* Text takes full width */
+        height: auto; /* Allow height to adjust based on content */
+        order: 2; /* Place text below headshot */
+    }
+
+    .hero-section .text h2 {
+        margin-top: 20px;
+    }
+
+    .hero-section .text .links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Allow links to wrap */
+    }
+
+    .headshot {
+        width: 200px; /* Smaller headshot */
+        height: 200px;
+        justify-content: center; /* Center the headshot */
+        order: 1; /* Place headshot above text */
+    }
+
+    .headshot img {
+        object-position: center;
+    }
+
+    /* Contact Section */
+    .cards {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center;
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .contact-me .linkedin,
+    .contact-me .mail {
+        width: 100%; /* Cards take full width */
+        max-width: 400px; /* Optional: cap maximum width on larger screens */
+        height: auto; /* Allow height to adjust */
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/* Breakpoint for very small Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    /* General Font/Spacing Adjustments for very small screens */
+    .skills-section h2,
+    .about-me h2,
+    .contact-me h2 {
+        font-size: 30px;
+    }
+
+    .hero-section .text p,
+    .skills-section .text,
+    .about-me .text p,
+    .cards p {
+        font-size: 16px;
+    }
+
+    nav .right a span {
+        /* Hide text labels in the nav bar on very small screens, only show icons */
+        display: none;
+    }
+
+    nav .right a:last-child {
+        /* Adjust padding for the button-style link (Email icon only) */
+        padding: 5px 10px;
+    }
+
+    /* Skills Section - Adjust horizontal padding and cell size if necessary */
+    .skills-section .cells {
+        flex-wrap: wrap; /* Ensure cells wrap if they exceed one line */
+    }
+}
+
+/* ====================================
+   HAMBURGER MENU IMPLEMENTATION (CSS ONLY)
+   ==================================== */
+
+/* 1. Base Styles for the Hamburger Toggle */
+.nav-toggle-input {
+    /* Hide the checkbox visually */
+    display: none;
+}
+
+.nav-toggle-label {
+    /* Initially hide the hamburger icon */
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: var(--text-color);
+    position: absolute;
+    right: 20px; /* Align with your mobile padding */
+    top: 25px; /* Adjust to center vertically */
+}
+
+/* 2. Modify Mobile Styles (900px Breakpoint) */
+@media (max-width: 900px) {
+    /* Nav Adjustments from previous responsiveness CSS */
+    nav {
+        /* Reset nav to row and ensure minimum height for positioning the hamburger */
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; /* Space out logo and hamburger */
+        height: 80px; /* Set a fixed height for the bar */
+        padding: 0 20px; /* Use the mobile padding */
+        position: relative; /* Needed for absolute positioning of toggle */
+    }
+
+    /* Show the hamburger icon */
+    .nav-toggle-label {
+        display: block;
+    }
+
+    /* Hide the main link container by default */
+    nav .right {
+        position: absolute;
+        top: 80px; /* Place it right below the fixed nav bar */
+        left: 0;
+        width: 100%;
+        height: 0; /* Collapse the menu */
+        background-color: var(--background-color);
+        flex-direction: column; /* Stack links vertically */
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden; /* Hide content */
+        transition: height 0.3s ease-in-out; /* Smooth slide transition */
+        border-top: 1px solid #eee; /* Subtle separator */
+        z-index: 100;
+    }
+
+    /* Style the links within the dropdown menu */
+    nav .right a {
+        display: block;
+        margin: 10px 0;
+        padding: 10px 20px;
+        width: 100%; /* Links take full width */
+        text-align: center;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    nav .right a:last-child {
+        /* Remove button style and border from the last item in the list view */
+        color: var(--background-color);
+        background-color: var(--text-color);
+        padding: 10px 20px;
+        border-radius: 0;
+        margin: 10px 0;
+        border-bottom: none;
+    }
+
+    /* 3. The Toggle Magic: Show the menu when the checkbox is checked */
+    .nav-toggle-input:checked ~ .right {
+        /* Set a height that is large enough to contain all links */
+        height: 250px; 
+    }
+}
